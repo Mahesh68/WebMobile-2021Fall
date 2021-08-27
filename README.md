@@ -3,22 +3,22 @@ Welcome to Web and Mobile Programming
 
 ### To Do: _Describe about your repo_
 
-**Student Name:** John Doe
+**Student Name:** Venkata Mahesh Mokkapati
 
 **Instructor Name:** Vijaya Yeruva
 
 **Wiki Links for Web ICPs**
 
-ICP1: https://github.com/VIJAYAYERUVA/WebMobile-2021Fall/wiki/Web_ICP1
+ICP1: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Web_ICP1
 
-ICP2: https://github.com/VIJAYAYERUVA/WebMobile-2021Fall/wiki/Web_ICP2
+ICP2: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Web_ICP2
 
 
 **Wiki Links for Mobile ICPs**
 
-ICP8: https://github.com/VIJAYAYERUVA/WebMobile-2021Fall/wiki/Mobile_ICP1
+ICP8: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Mobile_ICP1
 
-ICP9: https://github.com/VIJAYAYERUVA/WebMobile-2021Fall/wiki/Mobile_ICP2
+ICP9: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Mobile_ICP2
 
 
-**Wiki Link for Project:** https://github.com/VIJAYAYERUVA/WebMobile-2021Fall/wiki/Project 
+**Wiki Link for Project:** https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Project 
