@@ -5,6 +5,11 @@ Welcome to Web and Mobile Programming
 
 **Instructor Name:** Vijaya Yeruva
 
+In this course going to learn about the details of web and mobile programming.
+
+**Contributors:** Venkata Mahesh Mokkapati, Sailaja Narra
+
+
 **Wiki Links for Web ICPs**
 
 ICP1: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Web_ICP1
