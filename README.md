@@ -9,6 +9,7 @@ In this course going to learn about the details of web and mobile programming.
 
 **Contributors:** Venkata Mahesh Mokkapati, Sailaja Narra
 
+Users can clone this repository and check the files. For the project setup few steps like npm modules has to be installed.
 
 **Wiki Links for Web ICPs**
 
