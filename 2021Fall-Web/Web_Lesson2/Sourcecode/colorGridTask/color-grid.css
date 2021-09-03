@@ -1,0 +1,54 @@
+.container {
+  /* we can use flex to center items */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; */
+
+  /* Same can be done using css grid */
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container .grid {
+  display: grid;
+  grid: 85px 85px 85px / 85px 85px 85px;
+  grid-gap: 5px;
+}
+
+.grid .color_1 {
+  background-color: red;
+}
+
+.grid .color_2 {
+  background-color: green;
+}
+
+.grid .color_3 {
+  background-color: black;
+}
+
+.grid .color_4 {
+  background-color: yellow;
+}
+
+.grid .color_5 {
+  background-color: orange;
+}
+
+.grid .color_6 {
+  background-color: blue;
+}
+
+.grid .color_7 {
+  background-color: grey;
+}
+
+.grid .color_8 {
+  background-color: violet;
+}
+
+.grid .color_9 {
+  background-color: indigo;
+}
