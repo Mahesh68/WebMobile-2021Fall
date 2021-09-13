@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container text-center bg-info fill">
+      <!-- score buttons -->
+      <div class="row">
+        <div class="col score-points">
+          <div style="padding: 0 10px">
+            <h2>Player</h2>
+            <div><span class="score" id="playerScore">0</span></div>
+          </div>
+          <div style="padding: 0 10px">
+            <h2>Computer</h2>
+            <div><span class="score" id="CompScore">0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game info text  -->
+      <div class="row">
+        <h3 class="full-text">
+          Click one of the button below to play the game
+        </h3>
+        <h3 class="short-text">Lets Play</h3>
+      </div>
+
+      <!-- Real game starts here, rock, paper, scissor buttons are displayed -->
+      <div class="game">
+        <div class="row">
+          <div class="center">
+            <!-- findResult method will be called on click of any button  -->
+            <button class="btn btn-primary play-btn" id="rock" type="button">
+              <img src="../images/Rock.png" alt="" />
+            </button>
+            <button class="btn btn-primary play-btn" id="paper" type="button">
+              <img src="../images/Paper.png" alt="" />
+            </button>
+            <button class="btn btn-primary play-btn" id="scissor" type="button">
+              <img src="../images/Scissors.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result is shown here -->
+      <div class="row" id="output">
+        <div class="col-xs-6">
+          <!-- player selection  -->
+          <h1 style="font-size: 2rem">You Choose</h1>
+          <h1 id="playerSelection"></h1>
+        </div>
+        <div class="col-xs-6">
+          <!-- computer selection  -->
+          <h1 style="font-size: 2rem">Comp Choose</h1>
+          <h1 id="ComputerSelection"></h1>
+        </div>
+        <div class="d-flex justify-content-center" id="result"></div>
+      </div>
+    </div>
+
+    <!-- Scripts for running Rock, Paper, Scissors -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+.play-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.fill {
+  height: 100vh;
+}
+
+.score-points {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.short-text {
+  display: none;
+}
+
+.full-text {
+  display: block;
+}
+
+button.play-btn:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+button.play-btn:active {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+button.play-btn:focus {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.game {
+  margin-top: 7rem;
+}
+
+@media screen and (max-width: 576px) {
+  .game {
+    margin-top: 1rem;
+  }
+
+  #output #playerSelection,
+  #output #ComputerSelection {
+    font-size: 3rem;
+  }
+}
+
+#output {
+  display: none;
+}
+
+#result {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .full-text {
+    display: none;
+  }
+
+  .short-text {
+    display: block;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+
+  30% {
+    transform: scale(1, 0.8) translate(0px, 10px);
+  }
+
+  75% {
+    transform: scale(1, 1.1) translate(0px, -25px);
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+.bounce {
+  animation: bounce 0.75s infinite;
+}

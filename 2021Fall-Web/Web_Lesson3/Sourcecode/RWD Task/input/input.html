@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their github links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the aforementioned using bootstrap
+
+-->
+
+<html lang="en">
+  <head>
+    <title>RWD Task</title>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!---New Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- layout -->
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="../SampleImages/bean.jpg" alt="bean" />
+        </div>
+        <div class="col">
+          <div class="caption">
+            <h2 class="text-right">Mahesh Mokkapati</h2>
+            <h2 class="text-right">Front end Developer</h2>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 2px solid gray" />
+
+      <!-- Main image  -->
+      <div class="row">
+        <div class="col">
+          <img
+            class="img-fluid"
+            src="../SampleImages/Image.png"
+            alt=""
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h2 style="font-family: Lato; color: #bcbbbb">Featured Work</h2>
+        </div>
+      </div>
+
+      <!-- Three images are shown side by side taking 4 columns each out of 12 columns  -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="image-fig">
+            <img
+              class="img-fluid"
+              src="../SampleImages/app1.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <h3 class="text-center thumbnail-font pad10">APPIFY</h3>
+          <p class="text-center">
+            <a
+              class="thumbnail-font"
+              href="https://github.com/Mahesh68/WebMobile-2021Fall/wiki"
+              >Link to project</a
+            >
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="image-fig">
+            <img
+              class="img-fluid"
+              src="../SampleImages/app2.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <h3 class="text-center thumbnail-font pad10">SUN FLOWER</h3>
+          <p class="text-center">
+            <a
+              class="thumbnail-font"
+              href="https://github.com/Mahesh68/WebMobile-2021Fall/wiki"
+              >Link to project</a
+            >
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="image-fig">
+            <img
+              class="img-fluid"
+              src="../SampleImages/app3.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <h3 class="text-center thumbnail-font pad10">BOKEH</h3>
+          <p class="text-center">
+            <a
+              class="thumbnail-font"
+              href="https://github.com/Mahesh68/WebMobile-2021Fall/wiki"
+              >Link to project</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

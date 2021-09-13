@@ -1,0 +1,25 @@
+.thumbnail-font {
+  font-family: Lato;
+  color: #747704;
+}
+
+.img-fluid {
+  min-height: 156px;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.caption {
+  justify-content: end;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column;
+  height: 100%;
+}
+
+.image-fig {
+  height: 70%;
+  width: 100%;
+}
