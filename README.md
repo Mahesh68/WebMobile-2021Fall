@@ -15,6 +15,8 @@ Users can clone this repository and check the files. For the project setup few s
 
 ICP1: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Web_ICP1
 
+Video: https://umsystem.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=04349b5f-2dd0-4eea-9567-ad9200f372f2
+
 ICP2: https://github.com/Mahesh68/WebMobile-2021Fall/wiki/Web_ICP2
 
 
