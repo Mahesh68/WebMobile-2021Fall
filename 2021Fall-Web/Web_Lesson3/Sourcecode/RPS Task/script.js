@@ -26,7 +26,7 @@ function findResult(id) {
     }
   } else if (user_choice === "paper") {
     if (comp_choice === "rock") {
-      output("You Win", user_choice, comp_choice), 1;
+      output("You Win", user_choice, comp_choice, 1);
     } else {
       output("You Lose", user_choice, comp_choice, 2);
     }
