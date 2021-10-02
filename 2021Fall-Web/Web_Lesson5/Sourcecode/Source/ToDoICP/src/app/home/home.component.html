@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="">
+    <div class="row">
+      <div class="col-12 col-sm-5 mx-auto mt-5 pb-5 border border-info">
+        <div class="text-center">
+          <h1 class="mt-2 mt-2-mobile">Want to add tasks to your check list</h1>
+          <button
+            class="btn btn-outline-info btn-md m-3"
+            [routerLink]="['/todo']"
+            routerLinkActive="active"
+          >
+            Task Controller
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-sm-5 mx-auto mt-5 pb-5 border border-warning">
+        <div class="mx-auto text-center">
+          <h1 class="mt-2 mt-2-mobile">
+            Set a timer so that you will not miss the date
+          </h1>
+          <button
+            class="btn btn-warning btn-md m-3"
+            [routerLink]="['/timer']"
+            routerLinkActive="active"
+          >
+            Set Timer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

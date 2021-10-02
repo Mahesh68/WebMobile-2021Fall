@@ -1,0 +1,24 @@
+<!-- nav bar with nav brand and menu list items -->
+<nav class="navbar navbar-expand bg-info navbar-dark">
+  <a
+    class="navbar-brand"
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >App</a
+  >
+  <ul class="nav navbar-nav">
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/todo">Todo</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="timer" routerLinkActive="/active"
+        >Timer</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<!-- Here based on navigation and menu items click output will be displayed -->
+<!-- Home page will be displayed by default as it is the base href /  -->
+<router-outlet></router-outlet>

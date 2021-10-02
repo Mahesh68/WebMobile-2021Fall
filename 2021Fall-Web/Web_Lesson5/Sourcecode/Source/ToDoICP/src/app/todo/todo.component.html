@@ -1,0 +1,49 @@
+<div id="container">
+  <div class="row">
+    <div class="col">
+      <h1>Get it done!</h1>
+    </div>
+  </div>
+
+  <!-- list of tasks are looped here using ngFor  -->
+  <div class="row">
+    <div class="col">
+      <ol id="items">
+        <li *ngFor="let item of wishes">
+          {{ item }}
+          <span class="label pending" (click)="changeStatus($event)"
+            >Pending</span
+          >
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <span class="total"></span>
+    </div>
+  </div>
+
+  <br />
+
+  <!-- Add to list input text field and submit button  -->
+  <div class="row">
+    <div class="col">
+      <div class="form-inline">
+        <input
+          class="form-control mr-1"
+          id="item"
+          type="text"
+          [(ngModel)]="inputItem"
+        />
+        <button
+          class="btn btn-primary"
+          id="add-to-list"
+          (click)="onAddToList($event)"
+        >
+          Add to list
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

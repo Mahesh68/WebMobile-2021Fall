@@ -1,0 +1,9 @@
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 12px;
+  }
+
+  .mt-2-mobile {
+    margin-top: 1.5rem !important;
+  }
+}
