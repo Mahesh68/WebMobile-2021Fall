@@ -1,18 +1,25 @@
+.parent {
+  background: url("./../../assets/bg1.jpg") center center;
+  background-size: cover;
+  height: 89vh;
+}
+
 .main-container {
   width: 100%;
   padding: 20px;
-  height: 400px;
-  background: url('./../../assets/bg1.jpg') center center;
-  background-size: cover;
+  height: auto;
+  /* background: url("./../../assets/bg1.jpg") center center;
+  background-size: cover; */
+  position: relative;
 }
 
 .content {
   color: white;
   text-align: center;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
 .content h3 {
