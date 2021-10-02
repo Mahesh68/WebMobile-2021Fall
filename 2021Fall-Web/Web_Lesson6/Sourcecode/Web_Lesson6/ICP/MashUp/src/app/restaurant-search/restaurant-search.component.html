@@ -1,0 +1,60 @@
+<section class="restaurant-search">
+    <div class="restaurant-search-wrapper">
+        <div class="section-header">
+            <h2 class="section-title">
+                Restaurant Search
+            </h2>
+            <p class="section-info">Enter a place name and get near by restaurants.</p>
+        </div>
+        <div class="section-content">
+            <div class="search-input">
+                <input type="text" placeholder="Enter a place to get nearby restaurants" class="form-control" [(ngModel)]="address">
+                <i class="fas fa-search-location"></i>
+            </div>
+            <a class="btn btn-explore" (click)="getRestaurants()">Get Restaurants</a>
+        </div>
+        <div class="section-results" *ngIf="restaurantsList">
+            <div class="result-card" *ngFor="let restaurant of restaurantsList">
+                <img src="assets/bg1.jpg" alt="">
+                <div class="details">
+                    <h4>{{restaurant.name}}</h4>
+                    <p *ngFor="let address of restaurant.address">
+                        {{address}}
+                    </p>
+                    <a class="btn btn-explore" (click)="openDetails(restaurant, detailModal)">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<ng-template #detailModal>
+    <div class="modal-header">
+        <h4 class="modal-title">{{selectedRestaurant.name}}</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        <img src="./../../assets/bg1.jpg" alt="" width="100%">
+        <div class="info">
+            <div class="info-header">
+                <h6>{{selectedRestaurant.name}}</h6>
+                <span *ngIf="selectedRestaurant.opening_hours?.open_now" class="green">Open</span>
+                <span *ngIf="!selectedRestaurant.opening_hours?.open_now" class="red">Open</span>
+                <rating [(ngModel)]=selectedRestaurant.rating [max]="5 " [readonly]="true "></rating>
+            </div>
+
+            <p><span class="info-label ">Address </span><span class="info-value ">{{selectedRestaurant.formatted_address}}</span></p>
+            <div class="reviews ">
+                <h6>Reviews</h6>
+            </div>
+            <div class=" review " *ngFor="let review of selectedRestaurant.reviews ">
+                <p class="rating "><span class=" info-label ">{{review.author_name}}</span><span class="info-value "><rating [(ngModel)]=review.rating [max]="5 " [readonly]="true "></rating></span></p>
+                <p>{{review.text.substr(0,200)}}...<span>Read More</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer ">
+        <a class="btn btn-explore ">Visit Restaurant</a>
+    </div>
+</ng-template>

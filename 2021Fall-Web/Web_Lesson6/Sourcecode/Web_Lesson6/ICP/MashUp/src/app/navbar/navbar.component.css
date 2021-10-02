@@ -1,0 +1,45 @@
+.main-nav {
+  background: crimson;
+}
+
+.main-nav__container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.main-nav .logo {
+  display: inline-block;
+  width: 30%;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.logo a {
+  color: white;
+}
+
+.main-nav__list {
+  width: 65%;
+  display: inline-block;
+  text-align: right;
+}
+
+.main-nav__item {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.main-nav__item a {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.main-nav__item a.active, .main-nav__item a:hover {
+  border-bottom: 2px solid #fff;
+}

@@ -1,0 +1,57 @@
+<section class="restaurant-search">
+    <div class="restaurant-search-wrapper">
+        <div class="section-header">
+            <h2 class="section-title">
+                Recipe Search
+            </h2>
+            <p class="section-info">Enter a recipe name and get the details about it.</p>
+        </div>
+        <div class="section-content">
+            <div class="search-input">
+                <input type="text" placeholder="Enter a recipe name" class="form-control" [(ngModel)]="recipeName">
+                <i class="fas fa-search"></i>
+            </div>
+            <a class="btn btn-explore" (click)="getRecipes()">Get Recipes</a>
+        </div>
+        <div class="section-results">
+            <div class="result-card" *ngFor="let recipe of recipeList">
+                <img [src]="recipe.image" alt="">
+                <div class="details">
+                    <h4>{{recipe.title}}</h4>
+                    <a class="btn btn-explore" (click)="openDetails(recipe,detailModal)">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<ng-template #detailModal>
+    <div class="modal-header">
+        <h4 class="modal-title text-center">{{selectedRecipe.title}}</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        <img [src]="selectedRecipe.image" alt=" " width="100% ">
+        <div class="info ">
+            <div class="info-header">
+                <h6>{{selectedRecipe.title}}</h6>
+            </div>
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <h4>Ingredients:</h4>
+                    <ul class="ingredients-list">
+                        <li *ngFor="let ing of ingredientList">{{ing}}</li>
+                    </ul>
+                </div>
+
+                <div class="process-steps">
+                    <h4>Steps to prepare:</h4>
+                    <p *ngFor="let step of processSteps">
+                        {{step.number}}. {{step.desc}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

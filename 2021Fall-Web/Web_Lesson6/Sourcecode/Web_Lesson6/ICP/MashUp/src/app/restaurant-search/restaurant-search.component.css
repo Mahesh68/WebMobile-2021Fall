@@ -1,0 +1,141 @@
+    .restaurant-search {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .restaurant-search-wrapper {
+        width: 75%;
+        margin: 0 auto;
+        height: 95vh;
+        overflow-y: auto;
+    }
+
+    .restaurant-search-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-header {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .section-header h2 {
+        color: #ce6a7e;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 60%;
+    }
+
+    input.form-control {
+        width: 100%;
+        line-height: 1.5;
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #ccc;
+    }
+
+    .search-input i {
+        position: absolute;
+        top: 7px;
+        left: 77%;
+    }
+
+    .btn.btn-continue {
+        padding: 5px 10px;
+    }
+
+    .section-results {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .section-results .result-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 3px 3px #ccc;
+        margin: 10px;
+    }
+
+    .section-results .result-card img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .result-card .details {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .result-card .details h4 {
+        font-size: 14px;
+    }
+
+    .btn.btn-explore {
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .info-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info-header h6 {
+        margin: 0;
+    }
+
+    .info-label {
+        width: 30%;
+        font-weight: 700;
+        color: #ce6a7e;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .info-value {
+        width: 60%;
+        display: inline-block;
+    }
+
+    .rating .info-label {
+        width: 65%;
+    }
+
+    .rating .info-value {
+        width: 25%;
+    }
+
+    .reviews h6 {
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .green {
+        color: green;
+        font-weight: 700;
+    }
+
+    .red {
+        color: crimson;
+        font-weight: 700;
+    }
