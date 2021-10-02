@@ -1,0 +1,8 @@
+.image {
+  height: auto;
+  background-size: cover;
+  width: 100%;
+  background-image: url("~images/bg.jpg");
+  background-position: 50% 50%;
+  min-height: 100vh;
+}
