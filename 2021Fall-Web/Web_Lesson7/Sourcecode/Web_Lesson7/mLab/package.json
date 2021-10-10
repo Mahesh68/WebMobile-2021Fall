@@ -1,0 +1,7 @@
+{
+  "name": "mLab",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^3.6.4"
+  }
+}

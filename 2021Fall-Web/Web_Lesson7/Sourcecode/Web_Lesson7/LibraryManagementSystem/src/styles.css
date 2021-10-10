@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0 5%;
+
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://img.freepik.com/free-photo/product-presentation-wooden-table-with-background-empty-bookshelf-library_172251-444.jpg?size=626&ext=jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
