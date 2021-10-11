@@ -1,6 +1,9 @@
 <!-- write code to edit and save book i this component -->
+
+<!-- created a form with form group impoted from angular forms  -->
 <form [formGroup]="bookForm" (ngSubmit)="onFormSubmit(bookForm.value)">
   <mat-form-field class="example-full-width">
+    <!-- input fields ISBN and their matchers for errors  -->
     <input
       matInput
       placeholder="ISBN"
@@ -14,6 +17,7 @@
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-full-width">
+    <!-- input fields for title and their matchers for errors  -->
     <input
       matInput
       placeholder="Title"
@@ -28,6 +32,7 @@
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-full-width">
+    <!-- input fields AUTHOR and their matchers for errors  -->
     <input
       matInput
       placeholder="Author"
@@ -42,6 +47,7 @@
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-full-width">
+    <!-- text area input field  -->
     <textarea
       matInput
       placeholder="Description"
@@ -59,6 +65,7 @@
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-full-width">
+    <!-- input field for publisher  -->
     <input
       matInput
       placeholder="Publisher"
@@ -92,6 +99,7 @@
     </mat-error>
   </mat-form-field>
   <div class="button-row">
+    <!-- button will be disabled untill all the fields are valid  -->
     <button
       type="submit"
       [disabled]="!bookForm.valid"

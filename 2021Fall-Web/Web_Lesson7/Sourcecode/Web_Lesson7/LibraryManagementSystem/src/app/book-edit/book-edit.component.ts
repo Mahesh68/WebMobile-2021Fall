@@ -31,6 +31,7 @@ export class BookEditComponent implements OnInit {
     private formBuilder: FormBuilder
   ) {}
 
+  // Fetching the book details with values on initialization of this component
   ngOnInit() {
     this.bookForm = this.formBuilder.group({
       isbn: "",
@@ -55,6 +56,10 @@ export class BookEditComponent implements OnInit {
         });
       });
   }
+
+  // On form submit this method is called
+
+  // Here ngForm is used for the form as this formgroup binds the input values and validation can be done by use of this instance
   onFormSubmit(form: NgForm) {
     this.api.updateBook(this.route.snapshot.params["id"], form).subscribe(
       (res) => {
